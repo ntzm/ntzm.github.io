@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/ntzm
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://ntzm.io
+  * I am ntzm (https://keybase.io/ntzm) on keybase.
+  * I have a public key with fingerprint 8DA6 704D 3716 D75E D93C  6F65 4EC5 713C E956 EA0B
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010130f39f29b32fb242283075038b9da9417fee44eee904f38fc193c32e47765af00a",
+            "fingerprint": "8da6704d3716d75ed93c6f654ec5713ce956ea0b",
+            "host": "keybase.io",
+            "key_id": "4ec5713ce956ea0b",
+            "kid": "010130f39f29b32fb242283075038b9da9417fee44eee904f38fc193c32e47765af00a",
+            "uid": "6fce72f36a3fecda90347c2e5510e919",
+            "username": "ntzm"
+        },
+        "service": {
+            "hostname": "ntzm.io",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1473583304,
+    "expire_in": 157680000,
+    "prev": "7dea9b0bbfc4a8e1891bc93be3b25025add254c4df3ef136eb047e45b4b59e96",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.56
+Comment: https://keybase.io/crypto
+
+yMIeAnicrZJbSBRRGMfXS1ILYRFdoEgaCLpYnZlz5rZFRKVGUVFaaW0sc2a+cWet
+3W1n3DQrKNAIUemhsPIhoeyt6Ia2aOyaG11pIYOFAulCCHa3gqKgM1bQQ4+dl8P5
+zv/3P//v4wxMzPN4c2BrZ8H+zpENOfdSrbWebY9n3G7gaMSo53wNXA2MbbDLANsJ
+1FgG5+MQj3iMTKyagkqxYFKBCIKCkSwirFDV0FTCyyYAIQCgImJixdR5FetYACLL
+kqiZCGlcMWda4WqIRWNW2GG2iqFJMiIGlnnJkEUwGCGZkkhAF2Ue66CKEmiIMjAY
+sV2ChaOaDYutCKuxQ2As3j/0/zl37ZidZOogCyaWNGyCzmiEiawLIIo8ApVXXaEN
+sbC2G5g67OzbzR0o5lglbungDtXt4q/bX21EYxEnokd2sWLQcaI+l3Hqo65oL9DA
+bzxArbDBpseAOMRsKxLmfDxT6o7l+vFExqKCMSLFHNRFrRgELFchypKC2HKfgTiz
+lA3QVIooNXWiKcArKk91FVPAVBCRIGqGIYhEJ4aJweSxBBQRGYhICRVVUCXObWhP
+OMK8McupVTNP26oOa05tDLgD/Ul/vifH6ykYl+t+K493wqQ/n+3k8vGetqaKl4Xz
+o2h9hb15RUv7d2U0fb0w1Tza/t775MShC3fpg5uvFib9ofHvnutT2zPbi0ayia3K
+nSW3FzTaCXhQb11+Nj91HB4u7HWynqvn38XfhKYMlvWVXWkNbTmS6J5z4XBjk/yt
+sXzyi7lDPbdyp5dsKLof7Sqct6ZCs5OVHQl+6HP2Y9voxZLuIPhbqkpnBbs7Zlb1
+ZPoGer88Pr1u+OmO/Kb04MozUuWPUGJqUaJjxuszuRVq/6NM0sjsvF83fHTSyWXt
+fStX+w/qN9Ze+rp+WjQv/eFT/6LZXMrXcKp8S7YsODAl3jzy1u6q2b6t1Np0Nn1t
+Y+Lp5iOXjy1d9fHcT7DcQ9I=
+=HyFm
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ntzm
+
+==================================================================
+
