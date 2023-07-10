@@ -1,73 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nat Zimmermann</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Person",
+        "name": "Nat Zimmermann",
+        "gender": "male",
+        "jobTitle": "Software Engineer",
+        "url": "https://nat.bike",
+        "sameAs": [
+          "https://mastodon.social/@ntzm",
+          "https://github.com/ntzm",
+          "https://www.linkedin.com/in/ntzm",
+          "https://stackoverflow.com/users/2012476/ntzm",
+          "https://ecologi.com/ntzm",
+          "https://www.openstreetmap.org/user/ntzm"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <h1>Nat Zimmermann (he/him)</h1>
+    <header>
+      <h1>Nat Zimmermann</h1>
 
-    <p>Hi I'm Nat, a software engineer from Derbyshire, UK.</p>
+      <p>he/him</p>
 
-    <h2>Interests</h2>
+      <p>Hi I'm Nat, a software engineer from Derbyshire, UK.</p>
+    </header>
 
-    <ul>
-      <li>Open data, mostly OpenStreetMap</li>
-      <li>Cycling and infrastructure</li>
-      <li>Veganism and animal welfare</li>
-      <li>Environment</li>
-      <li>Social justice</li>
-    </ul>
+    <section id="interests">
+      <h2>Interests</h2>
 
-    <h2>Links</h2>
+      <ul>
+        <li>Open data, mostly OpenStreetMap</li>
+        <li>Cycling and infrastructure</li>
+        <li>Veganism and animal welfare</li>
+        <li>Environment</li>
+        <li>Social justice</li>
+      </ul>
+    </section>
 
-    <ul>
-      <li><a rel="me" href="https://mastodon.social/@ntzm">Mastodon</a></li>
-      <li><a rel="me" href="https://github.com/ntzm">GitHub</a></li>
-      <li><a rel="me" href="https://www.linkedin.com/in/ntzm">LinkedIn</a></li>
-      <li><a rel="me" href="https://stackoverflow.com/users/2012476/ntzm">StackOverflow</a></li>
-      <li><a rel="me" href="https://ecologi.com/ntzm">Ecologi</a></li>
-      <li><a rel="me" href="https://www.openstreetmap.org/user/ntzm">OpenStreetMap</a></li>
-    </ul>
+    <section id="links">
+      <h2>Links</h2>
 
-    <h2>Current Projects</h2>
+      <ul>
+        <li>
+          <a rel="me" href="https://mastodon.social/@ntzm">Mastodon</a>
+        </li>
+        <li>
+          <a rel="me" href="https://github.com/ntzm">GitHub</a>
+        </li>
+        <li>
+          <a rel="me" href="https://www.linkedin.com/in/ntzm">LinkedIn</a>
+        </li>
+        <li>
+          <a rel="me" href="https://stackoverflow.com/users/2012476/ntzm">StackOverflow</a>
+        </li>
+        <li>
+          <a rel="me" href="https://ecologi.com/ntzm">Ecologi</a>
+        </li>
+        <li>
+          <a rel="me" href="https://www.openstreetmap.org/user/ntzm">OpenStreetMap</a>
+        </li>
+      </ul>
+    </section>
 
-    <ul>
-      <li>
-        <a href="https://ntzm.github.io/osm-address-collector">OSM Address Collector</a>
-      </li>
-    </ul>
+    <section id="projects">
+      <h2>Projects</h2>
 
-    <h2>Work</h2>
+      <ul>
+        <li>
+          <a href="osm-address-collector">OSM Address Collector</a>
+        </li>
+      </ul>
+    </section>
 
-    <ul>
-      <li>
-        <p><strong>Software Engineer @ Beeline</strong></p>
-        <p>Nov 2021 - Present</p>
-      </li>
+    <section id="work">
+      <h2>Work</h2>
 
-      <li>
-        <p><strong>Backend Engineer @ Goodlord</strong></p>
-        <p>Mar 2021 - Oct 2021</p>
-      </li>
+      <ul>
+        <li>
+          <section>
+            <h3>Software Engineer @ Beeline</h3>
+            <p>
+              <time datetime="2021-11">Nov 2021</time> -
+              Present
+            </p>
+          </section>
+        </li>
 
-      <li>
-        <p><strong>PHP Developer @ Helical Levity / SANS</strong></p>
-        <p>Dec 2018 - Mar 2021</p>
-      </li>
+        <li>
+          <section>
+            <h3>Backend Engineer @ Goodlord</h3>
+            <p>
+              <time datetime="2021-03">Mar 2021</time> -
+              <time datetime="2021-10">Oct 2021</time>
+            </p>
+          </section>
+        </li>
 
-      <li>
-        <p><strong>Web Developer @ Razor Creations</strong></p>
-        <p>Mar 2016 - Dec 2018</p>
-      </li>
+        <li>
+          <section>
+            <h3>PHP Developer @ Helical Levity / SANS</h3>
+            <p>
+              <time datetime="2018-12">Dec 2018</time> -
+              <time datetime="2021-03">Mar 2021</time>
+            </p>
+          </section>
+        </li>
 
-      <li>
-        <p><strong>Part-time Web Developer @ Codemakers</strong></p>
-        <p>Nov 2014 - Mar 2015</p>
-      </li>
-    </ul>
+        <li>
+          <section>
+            <h3>Web Developer @ Razor Creations</h3>
+            <p>
+              <time datetime="2016-03">Mar 2016</time> -
+              <time datetime="2018-12">Dec 2018</time>
+            </p>
+          </section>
+        </li>
+
+        <li>
+          <section>
+            <h3>Part-time Web Developer @ Codemakers</h3>
+            <p>
+              <time datetime="2014-11">Nov 2014</time> -
+              <time datetime="2015-03">Mar 2015</time>
+            </p>
+          </section>
+        </li>
+      </ul>
+    </section>
   </body>
 </html>
