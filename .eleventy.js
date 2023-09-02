@@ -10,4 +10,10 @@ module.exports = function(config) {
         level: [2],
       })
   )
+
+  return {
+    dir: {
+      output: 'docs',
+    },
+  }
 }
