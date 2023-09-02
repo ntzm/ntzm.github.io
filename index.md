@@ -23,11 +23,11 @@ linked_data: |
 
 he/him
 
-Hi I'm Nat, a software engineer from Derbyshire, UK.
+Hi I'm Nat, a software engineer from [Derbyshire, UK](https://www.openstreetmap.org/#map=10/53.0990/-1.7180).
 
 ## Interests
 
-* Open data, mostly OpenStreetMap
+* Open data, mostly [OpenStreetMap](https://www.openstreetmap.org/)
 * Cycling and infrastructure
 * Veganism and animal welfare
 * Environment
@@ -48,17 +48,17 @@ Hi I'm Nat, a software engineer from Derbyshire, UK.
 
 ## Work
 
-* ### Software Engineer @ Beeline
+* ### Software Engineer @ [Beeline](https://beeline.co/)
   Nov 2021 - Present
 
-* ### Backend Engineer @ Goodlord
+* ### Backend Engineer @ [Goodlord](https://www.goodlord.co/)
   Mar 2021 - Oct 2021
 
-* ### PHP Developer @ Helical Levity / SANS 
+* ### PHP Developer @ [Helical Levity](https://cyberstart.com/) / [SANS](https://www.sans.org/)
   Dec 2018 - Mar 2021
 
-* ### Web Developer @ Razor Creations
+* ### Web Developer @ [Razor Creations](https://www.razorcreations.com/)
   Mar 2016 - Dec 2018
 
-* ### Part-time Web Developer @ Codemakers
+* ### Part-time Web Developer @ [Codemakers](https://www.codemakers.co.uk/)
   Nov 2014 - Mar 2015
