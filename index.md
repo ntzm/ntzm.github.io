@@ -23,7 +23,7 @@ linked_data: |
 
 he/him
 
-Hi I'm Nat, a software engineer from [Derbyshire, UK](https://www.openstreetmap.org/#map=10/53.0990/-1.7180).
+Hi I'm Nat, a software engineer from [Sheffield](https://www.openstreetmap.org/relation/106956).
 
 ## Interests
 
