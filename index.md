@@ -46,6 +46,10 @@ Hi I'm Nat, a software engineer from [Sheffield](https://www.openstreetmap.org/r
 
 * [OSM Address Collector](osm-address-collector)
 
+## Random bits
+
+* [geo: Intents Testing](geo-intents)
+
 ## Work
 
 * ### Software Engineer @ [Beeline](https://beeline.co/)

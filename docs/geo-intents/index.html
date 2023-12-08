@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nat Zimmermann</title>
+    <link rel="stylesheet" href="/style.css">
+    <script type="application/ld+json"></script>
+  </head>
+  <body>
+  	<h1>geo: Intents Testing</h1>
+<p><a href="https://developer.android.com/guide/components/intents-common#Maps">Source</a></p>
+<h2 id="coordinates" tabindex="-1">Coordinates</h2>
+<blockquote>
+<p>Show the map at the given longitude and latitude.</p>
+</blockquote>
+<p><a href="geo:53.38067,-1.47024">geo:53.38067,-1.47024</a></p>
+<h2 id="coordinates-with-zoom" tabindex="-1">Coordinates with zoom</h2>
+<blockquote>
+<p>Show the map at the given longitude and latitude at a certain zoom level.
+A zoom level of 1 shows the whole Earth, centered at the given lat,lng.
+The highest (closest) zoom level is 23.</p>
+</blockquote>
+<p><a href="geo:53.38067,-1.47024?z=11">geo:53.38067,-1.47024?z=11</a></p>
+<p><a href="geo:53.38067,-1.47024?z=3">geo:53.38067,-1.47024?z=3</a></p>
+<h2 id="labelled-coordinates" tabindex="-1">Labelled coordinates</h2>
+<blockquote>
+<p>Show the map at the given longitude and latitude with a string label.</p>
+</blockquote>
+<p><a href="geo:0,0?q=53.38067,-1.47024(Test)">geo:0,0?q=53.38067,-1.47024(Test)</a></p>
+<h2 id="street-address" tabindex="-1">Street address</h2>
+<blockquote>
+<p>Show the location for &quot;my street address&quot;, which can be a specific address or location query.</p>
+</blockquote>
+<p>Used by Android Contacts app.</p>
+<p><a href="geo:0,0?q=Sheffield+City+Centre">geo:0,0?q=Sheffield+City+Centre</a></p>
+<p><a href="geo:0,0?q=Sheffield%20City%20Centre">geo:0,0?q=Sheffield%20City%20Centre</a></p>
+
+  </body>
+</html>
