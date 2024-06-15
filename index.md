@@ -49,6 +49,7 @@ Hi I'm Nat, a software engineer from [Sheffield](https://www.openstreetmap.org/r
 ## Random bits
 
 * [geo: Intents Testing](geo-intents)
+* [Elevation smoothing comparison](elevation-smoothing)
 
 ## Work
 
