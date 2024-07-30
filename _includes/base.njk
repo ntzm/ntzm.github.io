@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nat Zimmermann</title>
     <link rel="stylesheet" href="/style.css">
+    {% if code %}
+      <link href="/prism-rose-pine-dawn-alt.css" rel="stylesheet">
+      <link href="/prism-rose-pine-main-alt.css" rel="stylesheet" media="(prefers-color-scheme: dark)">
+    {% endif %}
     <script type="application/ld+json">{{ linked_data | safe }}</script>
   </head>
   <body>

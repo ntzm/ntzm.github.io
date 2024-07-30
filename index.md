@@ -50,6 +50,7 @@ Hi I'm Nat, a software engineer from [Sheffield](https://www.openstreetmap.org/r
 
 * [geo: Intents Testing](geo-intents)
 * [Elevation smoothing comparison](elevation-smoothing)
+* [Import `.geojson` files with TypeScript and webpack](import-geojson-files-typescript-webpack)
 
 ## Work
 

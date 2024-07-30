@@ -61,3 +61,8 @@ blockquote {
   padding: 1px 10px;
   border-left: 2px solid var(--highlight-high);
 }
+
+code {
+  background: var(--surface);
+  padding: 0 2px;
+}

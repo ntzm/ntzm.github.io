@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nat Zimmermann</title>
+    <link rel="stylesheet" href="/style.css">
+    
+      <link href="/prism-rose-pine-dawn-alt.css" rel="stylesheet">
+      <link href="/prism-rose-pine-main-alt.css" rel="stylesheet" media="(prefers-color-scheme: dark)">
+    
+    <script type="application/ld+json"></script>
+  </head>
+  <body>
+  	<h1>Import .geojson files in TypeScript with webpack</h1>
+<h2 id="webpack-config" tabindex="-1">webpack config</h2>
+<p>In your webpack config, you must add a new rule to handle <code>.geojson</code> files.
+This can come before or after your <code>ts-loader</code> rule.</p>
+<p>There is no need to add <code>.geojson</code> to your <code>resolve.extensions</code> array.</p>
+<pre class="language-javascript"><code class="language-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">resolve</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.tsx?$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'ts-loader'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.geojson$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'json'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="typescript-config" tabindex="-1">TypeScript config</h2>
+<p>Now TypeScript needs to be told what <code>.geojson</code> imports look like.
+To do this, add this <code>declare</code> block to an existing type definition file (<code>.d.ts</code>) or create a new one.</p>
+<pre class="language-javascript"><code class="language-javascript">declare module <span class="token string">'*.geojson'</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token literal-property property">content</span><span class="token operator">:</span> any
+  <span class="token keyword">export</span> <span class="token keyword">default</span> content
+<span class="token punctuation">}</span></code></pre>
+<p>TypeScript also has to be configured to allow JSON module imports.
+Add this to your <code>tsconfig.json</code> file.</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"compilerOptions"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"resolveJsonModule"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="usage" tabindex="-1">Usage</h2>
+<p>Now you will be able to import <code>.geojson</code> files in your TypeScript project.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> shape <span class="token keyword">from</span> <span class="token string">'./file.geojson'</span></code></pre>
+<p>If you have <code>&quot;esModuleInterop&quot;: true</code> in your <code>tsconfig.json</code>, then you import the file slightly differently.
+Note that you can import it with any name.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> shape <span class="token keyword">from</span> <span class="token string">'./file.geojson'</span></code></pre>
+
+  </body>
+</html>
