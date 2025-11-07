@@ -42,6 +42,23 @@ Add this to your <code>tsconfig.json</code> file.</p>
     <span class="token property">"resolveJsonModule"</span><span class="token operator">:</span> <span class="token boolean">true</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
+<h2 id="jest-config" tabindex="-1">Jest config</h2>
+<p>By default Jest won't know how to import <code>.geojson</code> files, we need to add a transformer:
+Add this to your Jest config, you might need to change your <code>moduleFileExtensions</code> depending on your project:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token punctuation">{</span>
+  <span class="token operator">...</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">transform</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">'\\.geojson$'</span><span class="token operator">:</span> <span class="token string">'&lt;rootDir>/jestGeojsonTransformer.cjs'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">moduleFileExtensions</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'js'</span><span class="token punctuation">,</span> <span class="token string">'ts'</span><span class="token punctuation">,</span> <span class="token string">'geojson'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token operator">...</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span></code></pre>
+<p>and then create a file <code>jestGeojsonTransformer.cjs</code>:</p>
+<pre class="language-javascript"><code class="language-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function">process</span><span class="token punctuation">(</span><span class="token parameter">src</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">module.exports = </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>src<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;</span><span class="token template-punctuation string">`</span></span> <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
 <h2 id="usage" tabindex="-1">Usage</h2>
 <p>Now you will be able to import <code>.geojson</code> files in your TypeScript project.</p>
 <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> shape <span class="token keyword">from</span> <span class="token string">'./file.geojson'</span></code></pre>

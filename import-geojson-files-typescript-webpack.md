@@ -48,6 +48,32 @@ Add this to your `tsconfig.json` file.
 }
 ```
 
+## Jest config
+
+By default Jest won't know how to import `.geojson` files, we need to add a transformer:
+Add this to your Jest config, you might need to change your `moduleFileExtensions` depending on your project:
+
+```javascript
+{
+  ...,
+  transform: {
+    '\\.geojson$': '<rootDir>/jestGeojsonTransformer.cjs',
+  },
+  moduleFileExtensions: ['js', 'ts', 'geojson'],
+  ...,
+}
+```
+
+and then create a file `jestGeojsonTransformer.cjs`:
+
+```javascript
+module.exports = {
+  process(src) {
+    return { code: `module.exports = ${src};` }
+  }
+}
+```
+
 ## Usage
 
 Now you will be able to import `.geojson` files in your TypeScript project.
